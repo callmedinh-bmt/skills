@@ -1,0 +1,10 @@
+# Thông tin bìa và tiêu đề — sửa theo từng cuốn sách
+title_line1: "Sách mẫu"
+title_line2: "Bộ nhớ đệm (Cache)"
+title_line3: "ví dụ cho skill"
+subtitle: "Giải thích đơn giản, dễ hiểu qua ví dụ đời thường"
+tagline: "Từ nền tảng đến thực hành, kèm hình minh hoạ, ví dụ code và bài tập"
+footer: "Tài liệu học thuật kèm hình minh hoạ, ví dụ code và bài tập"
+running_head: "Sách mẫu — Cache"
+cover_image: "img/cache_aside.png"
+# docx_title: "Tiêu đề đầy đủ cho bản Word"   # tuỳ chọn; mặc định ghép 3 dòng tiêu đề

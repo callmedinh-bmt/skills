@@ -1,0 +1,21 @@
+Use the seo-geo-aeo skill.
+
+Review this frontend/web code for SEO/GEO implementation issues.
+
+Focus on:
+- metadata
+- robots/indexability
+- canonical
+- sitemap
+- redirects
+- semantic HTML
+- headings
+- crawlable links
+- SSR/SSG/rendered content
+- image alt and dimensions
+- structured data
+- locale/hreflang
+- Core Web Vitals risks
+- content extractability for AI search
+
+Return exact code-level changes. Mark assumptions explicitly.

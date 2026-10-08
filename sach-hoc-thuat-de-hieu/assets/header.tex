@@ -1,0 +1,66 @@
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+\setsansfont{TeX Gyre Heros}
+\setmonofont{Liberation Mono}[Scale=0.88]
+\newfontfamily\symfont{DejaVu Sans}
+\usepackage{newunicodechar}
+\newunicodechar{★}{{\symfont\textcolor{orange!85!black}{★}}}
+\newunicodechar{✗}{{\symfont ✗}}
+\usepackage[a4paper,margin=2.3cm,headheight=14pt]{geometry}
+\usepackage{xcolor}
+\definecolor{cblue}{HTML}{4A90D9}\definecolor{cpurple}{HTML}{8E5BD6}
+\definecolor{corange}{HTML}{F08C00}\definecolor{cgreen}{HTML}{3BA55C}
+\definecolor{cdark}{HTML}{1F3A5F}
+\usepackage[most]{tcolorbox}
+\tcbset{boxbase/.style={breakable,enhanced,arc=2mm,boxrule=0.8pt,left=3mm,right=3mm,top=2mm,bottom=2mm,
+  fonttitle=\sffamily\bfseries\small,before skip=8pt,after skip=10pt}}
+\newtcolorbox{kidbox}[1]{boxbase,colback=cblue!7,colframe=cblue,title={#1}}
+\newtcolorbox{aibox}[1]{boxbase,colback=cpurple!7,colframe=cpurple,title={#1}}
+\newtcolorbox{warnbox}[1]{boxbase,colback=corange!8,colframe=corange,title={#1}}
+\newtcolorbox{exbox}[1]{boxbase,colback=cgreen!7,colframe=cgreen,title={#1}}
+% code
+\usepackage{fvextra}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,breakanywhere,commandchars=\\\{\}}
+\makeatletter
+\@ifundefined{Shaded}{}{\renewenvironment{Shaded}{\begin{tcolorbox}[breakable,enhanced,colback=black!3,colframe=black!15,boxrule=0.5pt,arc=1.5mm,left=2mm,right=2mm,top=1mm,bottom=1mm]}{\end{tcolorbox}}}
+\makeatother
+% headings
+\usepackage{titlesec}
+\titleformat{\chapter}[display]{\sffamily\bfseries\color{cdark}}{\Large\color{cblue}Chương \thechapter}{8pt}{\huge}[\vspace{2pt}{\color{cblue}\titlerule[1.2pt]}]
+\titlespacing*{\chapter}{0pt}{-10pt}{24pt}
+\titleformat{\section}{\sffamily\bfseries\Large\color{cdark}}{\thesection}{0.8em}{}
+\titleformat{\subsection}{\sffamily\bfseries\large\color{cblue!80!black}}{\thesubsection}{0.8em}{}
+\titleformat{\subsubsection}{\sffamily\bfseries\normalsize}{}{0em}{}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{1}
+% names
+\usepackage{caption}
+\captionsetup{font=small,labelfont={bf,sf},labelsep=period}
+\renewcommand{\figurename}{Hình}
+\renewcommand{\tablename}{Bảng}
+\renewcommand{\contentsname}{Mục lục}
+\renewcommand{\chaptername}{Chương}
+\renewcommand{\appendixname}{Phụ lục}
+\usepackage{etoolbox}
+\AtBeginEnvironment{appendix}{}
+\makeatletter
+\g@addto@macro\appendix{\titleformat{\chapter}[display]{\sffamily\bfseries\color{cdark}}{\Large\color{cblue}Phụ lục \thechapter}{8pt}{\huge}[\vspace{2pt}{\color{cblue}\titlerule[1.2pt]}]}
+\makeatother
+% parts
+\newcommand{\mypart}[1]{\clearpage\thispagestyle{empty}\phantomsection\addcontentsline{toc}{part}{#1}%
+  \vspace*{\fill}\begin{center}{\color{cblue}\rule{0.6\textwidth}{1.5pt}}\\[14pt]{\sffamily\bfseries\Huge\color{cdark}#1}\\[10pt]{\color{cblue}\rule{0.6\textwidth}{1.5pt}}\end{center}\vspace*{\fill}\clearpage}
+% header/footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[LE,RO]{\small\sffamily\thepage}
+\fancyhead[RE]{\small\sffamily\nouppercase{\leftmark}}
+\fancyhead[LO]{\small\sffamily\bookRunningHead}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\small\sffamily\thepage}\renewcommand{\headrulewidth}{0pt}}
+\usepackage{float}
+\let\origfigure\figure\let\endorigfigure\endfigure
+\renewenvironment{figure}[1][]{\origfigure[H]}{\endorigfigure}
+\setlength{\parskip}{4pt}
+\renewcommand{\arraystretch}{1.25}
+\usepackage{tikz}

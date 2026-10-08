@@ -1,0 +1,19 @@
+Use the seo-geo-aeo skill.
+
+Create an SEO/GEO-ready page plan for the provided product/topic.
+
+Deliver:
+1. Audience and search intent.
+2. Primary topic and supporting entities/questions.
+3. URL recommendation.
+4. Title and meta description.
+5. H1/H2/H3 outline.
+6. Answer-first copy direction.
+7. Original evidence/data that should be added.
+8. Internal and external link plan.
+9. Structured data only when valid.
+10. GEO/AEO review.
+11. i18n considerations if relevant.
+12. Final pre-launch checklist.
+
+Do not invent facts, benchmarks, customer counts, certifications, or performance claims.

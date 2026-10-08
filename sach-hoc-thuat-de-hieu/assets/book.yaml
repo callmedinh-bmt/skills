@@ -1,0 +1,10 @@
+# Thông tin bìa và tiêu đề — sửa theo từng cuốn sách
+title_line1: "Design Pattern"            # dòng tiêu đề lớn thứ nhất (chữ trắng trên nền xanh đậm)
+title_line2: "& Thiết kế hệ thống"       # dòng tiêu đề lớn thứ hai
+title_line3: "trong thời đại AI"         # dòng nhỏ màu xanh nhạt bên dưới
+subtitle: "Giải thích đơn giản, dễ hiểu qua ví dụ đời thường"
+tagline: "Từ nền tảng đến thực hành, kèm hình minh hoạ, ví dụ code và bài tập"
+footer: "Tài liệu học thuật kèm hình minh hoạ, ví dụ code và bài tập"
+running_head: "Design Pattern & Thiết kế hệ thống"   # chữ nhỏ ở đầu trang lẻ
+cover_image: "img/cover.png"             # để "" nếu không muốn hình trên bìa
+# docx_title: "Tiêu đề đầy đủ cho bản Word"   # tuỳ chọn; mặc định ghép 3 dòng tiêu đề

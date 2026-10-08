@@ -1,0 +1,13 @@
+Use the seo-geo-aeo skill.
+
+Audit the provided website/page/repository.
+
+Requirements:
+- Follow SKILL.md source priority.
+- Check Technical SEO before GEO/AEO.
+- Classify findings as P0/P1/P2/P3.
+- For every issue include evidence, why it matters, exact fix, and validation method.
+- Separate Google requirements/recommendations from industry or GEO best practices.
+- Do not promise ranking.
+- If reviewing source code, identify the exact file/component/config to change when possible.
+- Finish with a prioritized implementation plan.

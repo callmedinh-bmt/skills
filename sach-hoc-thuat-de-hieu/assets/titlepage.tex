@@ -1,0 +1,19 @@
+% Trang bìa — các macro \bookTitleA ... được build.sh sinh ra từ book.yaml
+\begin{titlepage}
+\newgeometry{margin=0cm}
+\begin{tikzpicture}[remember picture,overlay]
+\fill[cdark] (current page.north west) rectangle ([yshift=-11cm]current page.north east);
+\fill[cblue] ([yshift=-11cm]current page.north west) rectangle ([yshift=-11.4cm]current page.north east);
+\end{tikzpicture}
+\vspace*{2.6cm}
+\begin{center}
+{\color{white}\sffamily\bfseries\fontsize{34}{40}\selectfont \bookTitleA\\[6pt]\bookTitleB\\[14pt]}
+{\color{cblue!40}\sffamily\Large \bookTitleC\\}
+\vspace{4.2cm}
+{\sffamily\Large\color{cdark} \bookSubtitle}\\[14pt]
+{\large \bookTagline}\\[30pt]
+\ifx\bookCover\empty\else\includegraphics[width=0.55\textwidth]{\bookCover}\\[24pt]\fi
+{\sffamily\color{gray} \bookFooter}
+\end{center}
+\restoregeometry
+\end{titlepage}

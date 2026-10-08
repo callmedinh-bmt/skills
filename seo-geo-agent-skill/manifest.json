@@ -1,0 +1,23 @@
+{
+  "name": "seo-geo-aeo",
+  "version": "1.0.0",
+  "entrypoint": "SKILL.md",
+  "default_language": "vi",
+  "capabilities": [
+    "technical-seo-audit",
+    "on-page-seo",
+    "content-seo",
+    "geo-aeo",
+    "international-seo",
+    "structured-data-review",
+    "performance-review",
+    "prelaunch-review"
+  ],
+  "source_priority": [
+    "Google Search Central",
+    "Official platform standards",
+    "Better i18n",
+    "Semrush",
+    "WRITER"
+  ]
+}
